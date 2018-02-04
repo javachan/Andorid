@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/LoginLogo" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Kullanici Adi : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/IDLabel" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/IDtext"
+            android:layout_weight="1"
+            android:hint="Kullanici Adinizi Giriniz" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:text="Şifre :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SifreLabel"
+            android:layout_weight="0.74" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passtext"
+            android:layout_weight="1"
+            android:hint="Şifrenizi Giriniz" />
+    </LinearLayout>
+
+    <Button
+        android:onClick="main_login"
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/girisbutton"
+        android:elevation="0dp" />
+
+</LinearLayout>
